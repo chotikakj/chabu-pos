@@ -5,6 +5,9 @@ import { Layouts } from "../layouts/index";
 const Home = Loadable(lazy(() => import("../pages/home")));
 const Notfound = Loadable(lazy(() => import("../pages/not-found")));
 const Billing = Loadable(lazy(() => import("../pages/billing")));
+const BillTransaction = Loadable(
+  lazy(() => import("../pages/bill-transaction"))
+);
 
 const Routes = () => {
   return [
@@ -19,6 +22,10 @@ const Routes = () => {
         {
           path: "/billing",
           element: <Billing />,
+        },
+        {
+          path: "/bill-transaction",
+          element: <BillTransaction />,
         },
       ],
     },

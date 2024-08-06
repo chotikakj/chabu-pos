@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { DesktopOutlined, PieChartOutlined } from "@ant-design/icons";
+import {
+  BookOutlined,
+  DesktopOutlined,
+  PieChartOutlined,
+} from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Layout, Menu } from "antd";
 import { Outlet, useLocation, useNavigate } from "react-router";
@@ -33,6 +37,11 @@ const items: MenuItem[] = [
     "สร้างบิล",
     "/billing",
     <DesktopOutlined style={{ fontSize: "22px", marginLeft: "-2px" }} />
+  ),
+  getItem(
+    "ประวัติบิล",
+    "/bill-transaction",
+    <BookOutlined style={{ fontSize: "22px", marginLeft: "-2px" }} />
   ),
 ];
 
